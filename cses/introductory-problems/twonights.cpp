@@ -10,6 +10,7 @@ int main(){
         else{
             int sq = i*i;
             long long int x = (1LL*sq*(sq-1))/2;
+            //Attackings => (n-2)*[(n-4)*2 + 10] + (n-4)*2 + 4
             long long int attackings = (4*i-8)*(i-1);
             cout<<(x-attackings)<<endl;
         }

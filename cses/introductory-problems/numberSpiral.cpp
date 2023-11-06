@@ -10,13 +10,13 @@ int main(){
             if((row&1)==1){
                 cout<<((row-1)*(row-1) + col)<<endl;
             }else{
-                cout<<((row*row)+1-col)<<endl;
+                cout<<((row*row)+1-col)<<endl; // (row-1)*(row-1) + row + (row-col)
             }
         }else{
             if((col&1)==1){
                 cout<<((col*col)+1-row)<<endl;
             }else{
-                cout<<((col-1)*(col-1) + row)<<endl;
+                cout<<((col-1)*(col-1) + row)<<endl; // (col-1)*(col-1) + col + (col-row)
             }
         }
     }
